@@ -1,0 +1,19 @@
+:root {
+    --fuentePrincipal: 'Inter', sans-serif;
+
+    --blanco: #fff;
+    --azul: #4eadfe;
+    --azulClaro: #04eefe;
+    --azulOscuro: #242c33;
+    --grisAzulado: #6b8499;
+    --grisOscuro: #5c6166;
+}
+
+body {
+    font-family: var(--fuentePrincipal)
+}
+
+a {
+    text-decoration: none;
+}
+
