@@ -16,4 +16,47 @@ body {
 a {
     text-decoration: none;
 }
+.gridfooter {
+    background-color: hsl(0, 0%, 100%);
+    color: #000000;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide el contenedor en tres columnas de igual ancho */
+    gap: 20px; /* Espacio entre las columnas */
+    text-align: center;
+}
+
+.logo {
+    margin-top: 40px;
+    align-items: flex-start;
+    grid-template-columns: 1; /* Coloca el h3 en la primera columna */
+}
+
+.h3 {
+    grid-template-columns: 2; /* Coloca el h3 en la segunda columna */
+}
+
+.h4 {
+    grid-template-columns: 3; /* Coloca el h3 en la tercera columna */
+}
+
+footer nav {
+    margin-top: 10px;
+}
+
+footer nav img {
+    width: 40px;
+    height: auto;
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+hr {
+    color: 1px solid #9e9e9e;
+}
+
+footer p{
+    text-align: center;
+}
 
