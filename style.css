@@ -9,11 +9,52 @@
     --grisOscuro: #5c6166;
 }
 
-body {
-    font-family: var(--fuentePrincipal)
+.Articulo{
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
 }
 
-a {
-    text-decoration: none;
+.TituloArticulo {
+    font-size: 53px;
+    background-image: linear-gradient(to top right, #04eefe,#4eadfe);   
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    font-weight: bold;
+    grid-column: span 3;
 }
 
+.CuadroTextoArticulo{
+    width: 100%;
+}
+
+.TextoArticulo{
+    font-size: 18px;
+    max-width: 100%;
+}
+
+.BotonArticulo{
+    background-image: linear-gradient(to right,#4eadfe, #04eefe);   
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+.CuadroImagenArticulo{
+    max-height: 500px;
+}
+
+.ImagenArticulo{
+    width: 90%;
+    height: 80%;
+    align-self: end;
+    border-radius: 20px
+}
