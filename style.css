@@ -7,25 +7,7 @@
     --azulOscuro: #242c33;
     --grisAzulado: #6b8499;
     --grisOscuro: #5c6166;
-}
 
-.Articulo{
-    background-color: #f0f0f0;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-}
-
-.TituloArticulo {
-    font-size: 53px;
-    background-image: linear-gradient(to top right, #04eefe,#4eadfe);   
-    -webkit-background-clip: text;
-    background-clip: text;
-    color:transparent;
-    font-weight: bold;
-    grid-column: span 3;
-}
 
 .CuadroTextoArticulo{
     width: 100%;
@@ -57,4 +39,8 @@
     height: 80%;
     align-self: end;
     border-radius: 20px
+=======
+nav ul li a:hover {
+    color: #ccc;
+
 }
