@@ -344,3 +344,53 @@ input[type="submit"] {
     background-size: 250%;
     transform: scale(1.04);
   }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.titulo {
+    text-align: center;
+    position: relative;
+    font-size: 4rem;
+}
+.img {
+    background-position: center;
+    height: 375px;
+    width: 100%;
+    background-image: url(./img/Blog-Virus.jpg);
+    background-size:cover
+    
+}
+
+.barra {
+    overflow-x: 522px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: 7px;
+    background-color: rgb(0, 0, 0);
+}
+
+.parrafo {
+    width: 60%;
+    color: #232C33;
+    float: left; /* Para que el párrafo esté pegado a la izquierda */
+}
+
+.todo {
+    display: flex;
+    justify-content: center;
+}
+
+.derecha {
+    position: relative;
+    width: 32%;
+    filter: drop-shadow(0px 4px 38.1px rgba(0, 0, 0, 0.05));
+    margin-left: auto;
+    float: right; /* Para que el div derecha esté a la derecha */
+}
