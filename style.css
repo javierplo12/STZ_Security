@@ -19,36 +19,6 @@ body {
 a {
     text-decoration: none;
 }
-/* --------------------carousel---------------------- */
-.carousel {
-    height: 600px;
-    margin: 0;
-    display: grid;
-    grid-template-rows: 500px 100px;
-    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
-    align-items: center;
-    justify-items: center;
-}
-.item {
-    width: 350px;
-    height: 270px;
-    border-radius: 10px;
-    box-shadow: 1px 0px 54px 10px rgba(151, 151, 155, 0.2);
-}
-.center {
-    display: flex;
-    text-align: left;
-    padding-top: 40px;
-}
-.center svg, .item svg {
-    margin-left: 25px;
-    padding-right: 5px;
-    width: 100px;
-}
-.center h2, .center p {
-    display: flex;
-    align-items: center;
-}
 
 /*------------ header --------------*/
 .navbar {
@@ -85,7 +55,8 @@ a {
     display: inline-block;
     cursor: pointer; 
     padding: 10px 20px;
-    border-radius: 10px; 
+    border-radius: 5px; 
+    font-size: 12px;
 
 }
 
@@ -111,31 +82,53 @@ nav ul li a:hover {
 
 /*---------------- article --------------*/
 .Articulo {
-    background-color: grey;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
 }
+.TituloArticulo {
+    font-size: 40px;
+    margin-top: 60px;
+    font-weight: 800;
+    background-image: linear-gradient(to top right, #04eefe,#4eadfe);   
+    background-clip: text;
+    color:transparent;
+    -webkit-background-clip: text;
+}
+
 .CuadroTextoArticulo{
-    width: 100%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.articleimg {
+    display: flex;
+    gap: 20px;
 }
 
 .TextoArticulo{
     font-size: 18px;
     max-width: 100%;
+    line-height: 35px;
 }
 
 .BotonArticulo{
     background-image: linear-gradient(to right,#4eadfe, #04eefe);   
     color: white;
-    padding: 15px 20px;
+    padding: 12px 15px;
     text-align: center;
     display: inline-block;
     font-size: 12px;
     cursor: pointer;
     border-color: transparent;
-    border-radius: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
 }
 
 .CuadroImagenArticulo{
-   height: 500px;
+   height: 400px;
+   width: 300px;
 }
 
 .ImagenArticulo{
@@ -148,7 +141,36 @@ nav ul li a:hover {
 
 }
 
-/*--------- carousel----------*/
+/* --------------------carousel---------------------- */
+.carousel {
+    height: 600px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 500px 100px;
+    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.item {
+    width: 350px;
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 1px 0px 54px 10px rgba(151, 151, 155, 0.2);
+}
+.center {
+    display: flex;
+    text-align: left;
+    padding-top: 40px;
+}
+.center svg, .item svg {
+    margin-left: 25px;
+    padding-right: 5px;
+    width: 100px;
+}
+.center h2, .center p {
+    display: flex;
+    align-items: center;
+}
 
 .titulos {
     color: var(--azul);
