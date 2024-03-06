@@ -10,13 +10,17 @@
 }
 
 html {
-    font-family: var(--fuentePrincipal)
+    font-family: var(--fuentePrincipal);
+    
+}
+body {
+    margin: 0;
 }
 
 a {
     text-decoration: none;
 }
-/* -------carousel------- */
+/* --------------------carousel---------------------- */
 .carousel {
     height: 600px;
     margin: 0;
@@ -31,7 +35,6 @@ a {
     height: 270px;
     border-radius: 10px;
     box-shadow: 1px 0px 54px 10px rgba(151, 151, 155, 0.2);
-    background-color: #f8f8f8;
 }
 .center {
     display: flex;
@@ -90,23 +93,23 @@ div.item {
   
 div.item:nth-of-type(1) {
     --offset: 1;
-    background-color: #ffffff;
+    background-color: var(--blanco);
 }
 div.item:nth-of-type(2) {
     --offset: 2;
-    background-color: #ffffff;
+    background-color: var(--blanco);
 }
 div.item:nth-of-type(3) {
     --offset: 3;
-    background-color: #ffffff;
+    background-color: var(--blanco);
 }
 div.item:nth-of-type(4) {
     --offset: 4;
-    background-color: #ffffff;
+    background-color: var(--blanco);
 }
 div.item:nth-of-type(5) {
     --offset: 5;
-    background-color: #ffffff;
+    background-color: var(--blanco);
 }
   
 input:nth-of-type(1) {
@@ -160,5 +163,87 @@ input:nth-of-type(5):checked ~ div#carousel-item div.item:nth-of-type(5) {
 
 /*-----------------------------------------------------------*/
 
+/*----------formulario de contact.html-----------*/
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+.contactanos {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    gap: 20px;
+    position: relative;
+    box-shadow: 1px 0px 54px 10px rgba(151, 151, 155, 0.2);
+}
+input[name="nombre"], input[name="email"], input[name="tel"] {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.datos {
+    width: calc(100% - 32px);
+    padding: 15px;
+    transition: all 1 ease;
+    border: 2px solid var(--azul);
+}
 
+.datos:focus, textarea:focus, #select-tipo:focus {
+    transform: scale(1.04);
+    outline: none;
+    border: none;
+    box-shadow: 1px 0px 54px 10px rgba(151, 151, 155, 0.2);
+}
 
+::-webkit-input-placeholder {
+    color: var(--grisAzulado); 
+    font-family: var(--fuentePrincipal);
+}
+
+#select-tipo {
+    appearance: none;
+    padding: 15px;
+    border-radius: 10px;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="grey" class="bi bi-caret-down-fill" viewBox="0 0 16 16"%3E%3Cpath d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"%3E%3C/path%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    font-weight: 700;
+    color: var(--grisAzulado);
+    border-color: var(--azul);
+    border-width: 2px;
+    outline: none;
+}
+
+textarea {
+    outline: none;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: var(--azul);
+}
+
+input[type="submit"] {
+    width: 120px;
+    position: relative;
+    padding: 13px 18px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(82.3deg, rgb(224, 91, 224), var(--azul));
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-size 0.5s ease; 
+  }
+  
+  input[type="submit"]:hover {
+    background-size: 250%;
+    transform: scale(1.04);
+  }
