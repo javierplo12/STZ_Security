@@ -1,0 +1,52 @@
+.hrServicios {
+    width: 300px;
+    height: 5px;
+    background-color:black;
+}
+
+.h2Servicios {
+    font-size: 24px;
+}
+
+.pServicios{
+    font-size: 14px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.nuestrosServicios {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contenedorServicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.columnasServicios {
+    display: flex;
+    flex-direction: column; 
+}
+
+.cajasServicios{
+    min-height: 180px;  
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cajasServicios img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-top: 30px;
+    margin-right: 10px;
+    border-radius: 20%;
+}
