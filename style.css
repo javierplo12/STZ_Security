@@ -27,22 +27,27 @@ a {
     justify-content: space-between;
     align-items: center;
 }
+.tituloweb a {
+    color: white;
+    font-size: 25px;
+}
+
 .columna{
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(100%/3);
 }
+
 .izquierda{
     justify-content: flex-end;
-    padding-right: 20px;
+    padding-right: 100px;
 
 }
 .navbar .subtitle{
     color: rgb(255, 255, 255);
     padding: 10px;
     align-items: center;
-
 }
 .navbar .subtitle img {
     width: 40px;
@@ -82,7 +87,8 @@ nav ul li a:hover {
 
 /*---------------- article --------------*/
 .Articulo {
-    margin-left: 100px;
+    margin: 0 auto;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
 }
@@ -90,10 +96,10 @@ nav ul li a:hover {
     font-size: 40px;
     margin-top: 60px;
     font-weight: 800;
-    background-image: linear-gradient(to top right, #04eefe,#4eadfe);   
-    background-clip: text;
+    background-image: linear-gradient(to top right,#4eadfe, #04eefe);   
     color:transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .CuadroTextoArticulo{
@@ -124,11 +130,28 @@ nav ul li a:hover {
     border-radius: 5px;
     border: none;
     width: 100px;
+    box-shadow: 1px 0px 54px 10px rgba(151, 151, 155, 0.2);
+    font-size: 13px;
+}
+.BotonArticulo:hover {
+    transition: all .5s ease-in-out;
+    color: var(--azulOscuro);
+    background-size: 120%;
+    transform: scale(1.04);
 }
 
 .CuadroImagenArticulo{
-   height: 400px;
-   width: 300px;
+    background-position: center;
+    height: 361px;
+    width: 41%;
+    background-image: url(./img/_6ee7f458-920f-41e4-8888-25e5685dba38.jpg);
+    background-size:cover;
+    border-radius: 10px;
+    box-shadow: 1px 0px 54px 10px rgba(151, 151, 155, 0.4);
+}
+.CuadroImagenArticulo:hover{
+    transition: all .3s ease-in;
+    transform: scale(1.01);
 }
 
 .ImagenArticulo{
@@ -188,7 +211,7 @@ nav ul li a:hover {
 div#carousel-item {
     grid-row: 1 / 2;
     grid-column: 1 / 8;
-    width: 100vw;
+    width: 99vw;
     height: 500px;
     display: flex;
     align-items: center;
@@ -283,12 +306,22 @@ input:nth-of-type(5):checked ~ div#carousel-item div.item:nth-of-type(5) {
 }
 
 /*----------formulario de contact.html-----------*/
+.textocontact {
+    max-width: 300px;
+}
+.textocontact p {
+    line-height: 25px;
+    text-align: justify;
+}
+.textocontact img {
+    transform: scaleX(-1);
+    max-width: 300px;
+}
 .contact {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 0;
-    height: 100vh;
+    gap: 50px;
+    margin-top: 100px;
 }
 .contactanos {
     display: flex;
@@ -297,10 +330,11 @@ input:nth-of-type(5):checked ~ div#carousel-item div.item:nth-of-type(5) {
     height: 400px;
     background-color: #ffffff;
     padding: 30px;
-    border-radius: 10px;
     gap: 20px;
     position: relative;
     box-shadow: 1px 0px 54px 10px rgba(151, 151, 155, 0.2);
+    border-radius: 10px;
+    /*border-image: linear-gradient(to bottom, black 0%, var(--azul) 100%) 1;*/
 }
 input[name="nombre"], input[name="email"], input[name="tel"] {
     border-radius: 10px;
@@ -362,11 +396,23 @@ input[type="submit"] {
     transition: background-size 0.5s ease; 
   }
   
-  input[type="submit"]:hover {
+input[type="submit"]:hover {
     background-size: 250%;
     transform: scale(1.04);
-  }
-  .container {
+}
+
+.localizacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+  
+  /*------------ blog.html------------------*/
+
+.container {
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
