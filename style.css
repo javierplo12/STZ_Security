@@ -16,84 +16,139 @@ html {
 body {
     margin: 0;
 }
+body, html {
+    overflow-x: hidden;
+}
 a {
     text-decoration: none;
 }
 
 /*------------ header --------------*/
-.navbar {
-    background-color: #000000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@media  (min-width: 700px) {
+
+    .navbar {
+        background-color: #000000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .tituloweb a {
+        color: white;
+        font-size: 25px;
+    }
+
+    .columna{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: calc(100%/3);
+    }
+    .columna a {
+        color: #fff;
+    }
+    .columna a:hover {
+        color: var(--azul);
+    }
+    .izquierda{
+        justify-content: flex-end;
+        padding-right: 100px;
+
+    }
+    .navbar .subtitle{
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        align-items: center;
+    }
+    .navbar .subtitle img {
+        width: 40px;
+        height: 40px;
+        align-items: center;
+    }
+    .boton{
+        background-image: linear-gradient(to right, #4eadfe, #04eefe); 
+        color: white;
+        display: inline-block;
+        cursor: pointer; 
+        padding: 10px 20px;
+        border-radius: 5px; 
+        font-size: 12px;
+    }
+    .boton:hover {
+        transition: all .5s ease-in-out;
+        color: var(--azulOscuro);
+        background-size: 120%;
+        transform: scale(1.04);
+    } 
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 15px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        color: #ccc;
+    }
 }
-.tituloweb a {
-    color: white;
-    font-size: 25px;
+@media  (max-width: 700px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        align-items: center;
+    }
+    .navbar img {
+        width: 30px;
+    }
+    .link-stz {
+        font-size: 20px; 
+    }
+    .link-menu {
+        font-size: 14px;
+    }
+    .columna a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .tituloweb {
+        font-weight: 800;
+    }
+    .juntoresponsive {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        gap: 2px;
+    }
+    .columna {
+        display: flex;
+        gap: 20px;
+    }
+    .subtitle {
+        margin: 2px;
+    }
+    .boton{
+        background-image: linear-gradient(to right, #4eadfe, #04eefe); 
+        color: white;
+        display: inline-block;
+        cursor: pointer; 
+        padding: 10px 20px;
+        border-radius: 5px; 
+        font-size: 10px;
+        margin: 7px;
+    }
 }
 
-.columna{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: calc(100%/3);
-}
-.columna a {
-    color: #fff;
-}
-.columna a:hover {
-    color: var(--azul);
-}
-.izquierda{
-    justify-content: flex-end;
-    padding-right: 100px;
-
-}
-.navbar .subtitle{
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    align-items: center;
-}
-.navbar .subtitle img {
-    width: 40px;
-    height: 40px;
-    align-items: center;
-}
-.boton{
-    background-image: linear-gradient(to right, #4eadfe, #04eefe); 
-    color: white;
-    display: inline-block;
-    cursor: pointer; 
-    padding: 10px 20px;
-    border-radius: 5px; 
-    font-size: 12px;
-}
-.boton:hover {
-    transition: all .5s ease-in-out;
-    color: var(--azulOscuro);
-    background-size: 120%;
-    transform: scale(1.04);
-} 
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    padding: 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    color: #ccc;
-}
 
 /*---------------- article --------------*/
 .Articulo {
@@ -180,6 +235,34 @@ nav ul li a:hover {
     color: #ccc;
 
 }
+@media  (max-width: 700px) {
+    .todoarticulo {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+    .TituloArticulo {
+        text-align: center;
+    }
+    .articleimg {
+        text-align: justify;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .CuadroTextoArticulo {
+        width: 100%;
+    }
+    .TextoArticulo {
+        display: flex;
+        max-width: fit-content;
+    }
+    .CuadroImagenArticulo {
+        width: 100%;
+        height: 200px;
+    }
+    
+}
 
 /* --------------------carousel---------------------- */
 .carousel {
@@ -228,7 +311,7 @@ nav ul li a:hover {
 div#carousel-item {
     grid-row: 1 / 2;
     grid-column: 1 / 8;
-    width: 99vw;
+    width: 98.5vw;
     height: 500px;
     display: flex;
     align-items: center;
@@ -321,6 +404,8 @@ input:nth-of-type(4):checked ~ div#carousel-item div.item:nth-of-type(4),
 input:nth-of-type(5):checked ~ div#carousel-item div.item:nth-of-type(5) {
     border: var(--azul) 1.5px solid;
 }
+
+
 /*--------------Footer ---------------*/
 .gridfooter {
     display: grid;
@@ -383,6 +468,21 @@ footer p{
 }
 .texto-derechos {
     color: #666;
+}
+
+@media (max-width: 700px) {
+    .logo {
+        justify-content: center;
+    }
+    .gridfooter {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-redessociales {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /*----------formulario de contact.html-----------*/
@@ -489,6 +589,22 @@ input[type="submit"]:hover {
     margin-bottom: 100px;
 }
 
+@media (max-width: 800px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactanos {
+        max-width: 300px;
+    }
+    .localizacion iframe {
+        margin: 10px 10px;
+        width: 350px;
+        height: 250px;
+    }
+}
+
   
   /*------------ blog.html------------------*/
 
@@ -527,7 +643,7 @@ input[type="submit"]:hover {
 .parrafo {
     width: 60%;
     color: #232C33;
-    float: left; /* Para que el párrafo esté pegado a la izquierda */
+    float: left; 
 }
 
 .todo {
@@ -540,5 +656,5 @@ input[type="submit"]:hover {
     width: 32%;
     filter: drop-shadow(0px 4px 38.1px rgba(0, 0, 0, 0.05));
     margin-left: auto;
-    float: right; /* Para que el div derecha esté a la derecha */
+    float: right; 
 }
