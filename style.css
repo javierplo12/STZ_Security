@@ -681,10 +681,7 @@ input[type="submit"]:hover {
 /*------------ blog.html------------------*/
 
 .container {
-    width: 80%;
-    margin: 0 auto;
     overflow: hidden;
-    padding: 2rem;
 }
 
 .titulo {
@@ -713,7 +710,6 @@ input[type="submit"]:hover {
 }
 
 .parrafo {
-    width: 60%;
     color: #232C33;
     float: left;
 }
@@ -725,10 +721,19 @@ input[type="submit"]:hover {
 
 .derecha {
     position: relative;
-    width: 32%;
     filter: drop-shadow(0px 4px 38.1px rgba(0, 0, 0, 0.05));
     margin-left: auto;
     float: right;
+}
+.entradas {
+    margin-bottom: 20px;
+}
+.entradas a {
+    color: var(--azul);
+    font-weight: 700;
+}
+.entry-list {
+    padding: 0;
 }
 
 /*------------ sobrenosotros.html------------------*/
@@ -804,17 +809,18 @@ p {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 8px;
+    align-items: center;
 }
 
 .titulo {
     text-align: center;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .barra {
-    width: 50px;
+    width: 130px;
     height: 3px;
     background-color: black;
     margin: 10px auto;
@@ -832,8 +838,8 @@ p {
 }
 
 .derecha {
-    flex: 1;
     margin-left: 20px;
+    padding: 20px;
 }
 
 .parrafo img {
@@ -850,17 +856,18 @@ p {
 .steps strong {
     font-weight: bold;
 }
-.entry-list{
-    text-align: center;
-}
 
 
 @media only screen and (max-width: 768px) {
     .todo {
         flex-direction: column;
+        align-items: center;
     }
     .parrafo,
     .derecha {
         margin: 0;
+    }
+    .derecha {
+        
     }
 }
