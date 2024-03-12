@@ -801,3 +801,66 @@ p {
 
 /*-------------Responsive-Blog------------------------*/
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.barra {
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    margin: 10px auto;
+}
+
+.todo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.parrafo {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.derecha {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.parrafo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.steps {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.steps strong {
+    font-weight: bold;
+}
+.entry-list{
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .todo {
+        flex-direction: column;
+    }
+    .parrafo,
+    .derecha {
+        margin: 0;
+    }
+}
