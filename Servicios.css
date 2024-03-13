@@ -1,32 +1,3 @@
-:root {
-    --fuentePrincipal: 'Inter', sans-serif;
-
-    --blanco: #fff;
-    --azul: #4eadfe;
-    --azulClaro: #04eefe;
-    --azulOscuro: #242c33;
-    --grisAzulado: #6b8499;
-    --grisOscuro: #5c6166;
-}
-
-html {
-    font-family: var(--fuentePrincipal);
-
-}
-
-body {
-    margin: 0;
-}
-
-body,
-html {
-    overflow-x: hidden;
-}
-
-a {
-    text-decoration: none;
-}
-
 /*------------ header --------------*/
 @media (min-width: 700px) {
 
